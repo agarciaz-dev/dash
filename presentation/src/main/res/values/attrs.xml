@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Component colors -->
+    <attr name="colorAccent" format="reference|color" />
+    <attr name="colorToolbar" format="reference|color" />
+
+    <!-- Text colors -->
+    <attr name="textColorPrimary" format="reference|color" />
+    <attr name="textColorSecondary" format="reference|color" />
+    <attr name="textColorDisabled" format="reference|color" />
+
+    <!-- Fonts -->
+    <attr name="fontThin" format="reference" />
+    <attr name="fontRegular" format="reference" />
+    <attr name="fontMedium" format="reference" />
+    <attr name="fontSemiBold" format="reference" />
+
+</resources>

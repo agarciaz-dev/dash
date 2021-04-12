@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- General -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowBackground">@color/colorNeutral200</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Colors -->
+        <item name="colorPrimary">@color/colorBrandPrimary</item>
+        <item name="colorAccent">@color/colorBrandLight</item>
+        <item name="colorToolbar">@color/colorBrandPrimary</item>
+
+        <!-- Theme items which must be overridden for Night mode -->
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Text colors -->
+        <item name="textColorPrimary">@color/colorNeutral800</item>
+        <item name="textColorSecondary">@color/colorNeutral700</item>
+        <item name="textColorDisabled">@color/colorNeutral500</item>
+
+    </style>
+
+</resources>

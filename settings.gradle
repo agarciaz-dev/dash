@@ -1,0 +1,7 @@
+include ':persistence'
+include ':network'
+include ':domain'
+include ':presentation'
+include ':core'
+include ':app'
+rootProject.name = "dash"

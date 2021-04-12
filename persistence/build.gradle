@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.library'
+}
+apply from: "$rootProject.projectDir/common.gradle"
+
+android {
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString(),
+                             "room.incremental"   : "true"]
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':core')
+
+    // Room
+    implementation 'androidx.room:room-runtime:2.2.6'
+    kapt 'androidx.room:room-compiler:2.2.6'
+    implementation 'androidx.room:room-ktx:2.2.6'
+    testImplementation 'androidx.room:room-testing:2.2.6'
+
+}

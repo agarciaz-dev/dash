@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand colors -->
+    <color name="colorBrandPrimary">#f44336</color>
+    <color name="colorBrandLight">#e57373</color>
+    <color name="colorBrandDark">#d32f2f</color>
+
+    <!-- Neutral colors -->
+    <color name="colorNeutral100">#FFFFFF</color>
+    <color name="colorNeutral200">#F9FAFC</color>
+    <color name="colorNeutral300">#EDEBF0</color>
+    <color name="colorNeutral400">#DDDAE0</color>
+    <color name="colorNeutral500">#89858C</color>
+    <color name="colorNeutral600">#616161</color>
+    <color name="colorNeutral700">#424242</color>
+    <color name="colorNeutral800">#212121</color>
+
+    <!-- User Interface colors -->
+    <color name="colorUIPositive">#13CE66</color>
+    <color name="colorUIWarning">#FFC82C</color>
+    <color name="colorUINegative">#FF4949</color>
+
+
+</resources>

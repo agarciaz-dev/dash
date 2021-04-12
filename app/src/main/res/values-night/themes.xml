@@ -1,0 +1,14 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Dash" parent="BaseTheme">
+
+        <!-- Fonts -->
+        <item name="android:fontFamily">@font/metropolis_font_family</item>
+        <item name="fontThin">@font/metropolis_thin</item>
+        <item name="fontRegular">@font/metropolis_regular</item>
+        <item name="fontMedium">@font/metropolis_medium</item>
+        <item name="fontSemiBold">@font/metropolis_semi_bold</item>
+
+    </style>
+
+</resources>

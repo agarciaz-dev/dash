@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- Restaurant -->
+    <dimen name="restaurant_cover_list_width">100dp</dimen>
+    <dimen name="restaurant_cover_list_height">50dp</dimen>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Spacing -->
+    <dimen name="spacingMicro">2dp</dimen>
+    <dimen name="spacingExtraSmall">4dp</dimen>
+    <dimen name="spacingSmall">8dp</dimen>
+    <dimen name="spacingNormalCompact">12dp</dimen>
+    <dimen name="spacingNormal">16dp</dimen>
+    <dimen name="spacingLarge">24dp</dimen>
+    <dimen name="spacingExtraLarge">32dp</dimen>
+
+    <!-- Font sizes -->
+    <dimen name="fontSizeHeading1">48sp</dimen>
+    <dimen name="fontSizeHeading2">32sp</dimen>
+    <dimen name="fontSizeHeading3">22sp</dimen>
+    <dimen name="fontSizeHeading4">22sp</dimen>
+    <dimen name="fontSizeHeading5">18sp</dimen>
+    <dimen name="fontSizeHeading6">16sp</dimen>
+    <dimen name="fontSizeButton">14sp</dimen>
+    <dimen name="fontSizeBody">14sp</dimen>
+    <dimen name="fontSizeCaption">12sp</dimen>
+    <dimen name="fontSizeNavigation">10sp</dimen>
+    <dimen name="fontSizeMinAutoSize">10sp</dimen>
+
+    <!-- Divider sizes -->
+    <dimen name="dividerSmall">0.5dp</dimen>
+    <dimen name="dividerNormal">1dp</dimen>
+    <dimen name="dividerLarge">2dp</dimen>
+
+</resources>

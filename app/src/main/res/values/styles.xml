@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text styles -->
+    <style name="TextBodyHeading1">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeHeading1</item>
+        <item name="android:fontFamily">?fontThin</item>
+    </style>
+
+    <style name="TextBodyHeading2">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeHeading2</item>
+        <item name="android:fontFamily">?fontSemiBold</item>
+    </style>
+
+    <style name="TextBodyHeading3">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeHeading3</item>
+        <item name="android:fontFamily">?fontMedium</item>
+    </style>
+
+    <style name="TextBodyHeading4">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeHeading4</item>
+        <item name="android:fontFamily">?fontRegular</item>
+    </style>
+
+    <style name="TextBodyHeading6">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeHeading6</item>
+        <item name="android:fontFamily">?fontSemiBold</item>
+    </style>
+
+    <style name="TextBodyEmphasis">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeBody</item>
+        <item name="android:fontFamily">?fontSemiBold</item>
+        <item name="android:lineSpacingExtra">@dimen/spacingMicro</item>
+    </style>
+
+    <style name="TextBodyRegular">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeBody</item>
+        <item name="android:fontFamily">?fontRegular</item>
+        <item name="android:lineSpacingExtra">@dimen/spacingMicro</item>
+    </style>
+
+    <style name="TextBodyDisabled">
+        <item name="android:textColor">?textColorDisabled</item>
+        <item name="android:textSize">@dimen/fontSizeBody</item>
+        <item name="android:fontFamily">?fontRegular</item>
+        <item name="android:lineSpacingExtra">@dimen/spacingMicro</item>
+    </style>
+
+    <style name="TextCaptionEmphasis">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeCaption</item>
+        <item name="android:fontFamily">?fontSemiBold</item>
+        <item name="android:lineSpacingExtra">@dimen/spacingMicro</item>
+    </style>
+
+    <style name="TextCaptionRegular">
+        <item name="android:textColor">?textColorSecondary</item>
+        <item name="android:textSize">@dimen/fontSizeCaption</item>
+        <item name="android:fontFamily">?fontRegular</item>
+        <item name="android:lineSpacingExtra">@dimen/spacingMicro</item>
+    </style>
+
+    <style name="TextInteractiveNavigation">
+        <item name="android:textColor">?textColorSecondary</item>
+        <item name="android:textSize">@dimen/fontSizeNavigation</item>
+        <item name="android:fontFamily">?fontMedium</item>
+    </style>
+
+    <style name="TextInteractiveButton">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">@dimen/fontSizeButton</item>
+        <item name="android:fontFamily">?fontSemiBold</item>
+    </style>
+
+    <style name="TextToolbarTitle">
+        <item name="android:textSize">@dimen/fontSizeHeading5</item>
+        <item name="android:fontFamily">?fontSemiBold</item>
+    </style>
+
+    <!-- Toolbar styles -->
+    <style name="ToolbarRegular">
+        <item name="titleTextAppearance">@style/TextToolbarTitle</item>
+        <item name="titleTextColor">@color/colorNeutral100</item>
+        <item name="android:background">?colorToolbar</item>
+    </style>
+
+</resources>

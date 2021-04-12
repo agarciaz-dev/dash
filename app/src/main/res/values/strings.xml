@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">dash</string>
+
+    <!-- Copy -->
+    <string name="copy_discover">Discover</string>
+    <string name="copy_open">Open</string>
+    <string name="copy_closed">Closed</string>
+
+    <!-- Restaurant -->
+    <string name="restaurant_logo">Restaurant logo</string>
+</resources>
