@@ -87,6 +87,8 @@ class RestaurantsFragment : BaseFragment(R.layout.restaurants_fragment) {
                 when (it) {
                     is RestaurantsEpoxyController.Command.OnRestaurantSelected ->
                         viewModel.onEvent(RestaurantsViewModel.View.Event.RestaurantSelected(it.restaurantId))
+                    is RestaurantsEpoxyController.Command.OnRestaurantSaved ->
+                        viewModel.onEvent(RestaurantsViewModel.View.Event.RestaurantSaved(it.restaurantId))
                 }
             }
         ).also { binding.recyclerView.setController(it) }

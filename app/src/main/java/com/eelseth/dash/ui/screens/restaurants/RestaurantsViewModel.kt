@@ -8,6 +8,7 @@ import com.eelseth.dash.R
 import com.eelseth.domain.model.Restaurant
 import com.eelseth.domain.useCases.FetchRestaurantsUseCase
 import com.eelseth.domain.useCases.RestaurantsUseCase
+import com.eelseth.domain.useCases.SaveRestaurantUseCase
 import com.eelseth.presentation.model.MessageStatus
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -16,7 +17,8 @@ import toothpick.InjectConstructor
 @InjectConstructor
 class RestaurantsViewModel(
     private val restaurantsUseCase: RestaurantsUseCase,
-    private val fetchRestaurantsUseCase: FetchRestaurantsUseCase
+    private val fetchRestaurantsUseCase: FetchRestaurantsUseCase,
+    private val saveRestaurantUseCase: SaveRestaurantUseCase,
 ) : ViewModel() {
 
     val state: StateFlow<State> get() = _state
@@ -37,6 +39,12 @@ class RestaurantsViewModel(
     fun onEvent(event: Event.RestaurantSelected) {
         viewModelScope.launch {
             _effect.emit(Effect.GoToRestaurantDetail(event.restaurantId))
+        }
+    }
+
+    fun onEvent(event: Event.RestaurantSaved) {
+        viewModelScope.launch {
+            saveRestaurantUseCase.invoke(event.restaurantId)
         }
     }
 
@@ -78,6 +86,7 @@ class RestaurantsViewModel(
             object Init : Event()
             object Refresh : Event()
             data class RestaurantSelected(val restaurantId: String) : Event()
+            data class RestaurantSaved(val restaurantId: String) : Event()
         }
 
         sealed class Effect {

@@ -2,6 +2,7 @@ package com.eelseth.dash.ui.screens.restaurants.views
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.Log
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.airbnb.epoxy.AfterPropsSet
@@ -27,6 +28,9 @@ class RestaurantItemView @JvmOverloads constructor(context: Context, attrs: Attr
     var onItemClicked: (() -> Unit)? = null
         @CallbackProp set
 
+    var onItemSaved: (() -> Unit)? = null
+        @CallbackProp set
+
     @ModelProp(options = [ModelProp.Option.DoNotHash])
     lateinit var imageLoader: ImageLoader
 
@@ -39,10 +43,21 @@ class RestaurantItemView @JvmOverloads constructor(context: Context, attrs: Attr
             if (restaurant.isOpen()) R.string.copy_open else R.string.copy_closed
         )
 
+        binding.saveImageView.setOnClickListener {
+            Log.i("events", "saveImageView: ")
+            onItemSaved?.invoke()
+        }
+
         imageLoader.loadImage(
             ImageSource.Url(restaurant.coverImageUrl),
             binding.logoImage,
             errorDrawableResource = R.drawable.ic_app_logo,
         )
+
+        if (restaurant.saved) {
+            binding.saveImageView.setImageResource(R.drawable.ic_star_selected)
+        } else {
+            binding.saveImageView.setImageResource(R.drawable.ic_star)
+        }
     }
 }

@@ -7,4 +7,5 @@ data class Restaurant(
     val coverImageUrl: String,
     val nextCloseTimestamp: Long?,
     val nextOpenTimestamp: Long?,
+    val saved: Boolean,
 )

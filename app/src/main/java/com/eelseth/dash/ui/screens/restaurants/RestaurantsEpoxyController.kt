@@ -20,11 +20,15 @@ class RestaurantsEpoxyController(
                 onItemClicked {
                     onCommand?.invoke(Command.OnRestaurantSelected(restaurant.id))
                 }
+                onItemSaved {
+                    onCommand?.invoke(Command.OnRestaurantSaved(restaurant.id))
+                }
             }
         }
     }
 
     sealed class Command {
         data class OnRestaurantSelected(val restaurantId: String) : Command()
+        data class OnRestaurantSaved(val restaurantId: String) : Command()
     }
 }

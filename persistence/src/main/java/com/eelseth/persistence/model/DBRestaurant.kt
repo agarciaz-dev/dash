@@ -2,6 +2,7 @@ package com.eelseth.persistence.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
 import com.eelseth.persistence.base.BaseDatabaseEntity
 
@@ -15,5 +16,5 @@ data class DBRestaurant(
     @ColumnInfo(name = "description") val description: String,
     @ColumnInfo(name = "cover_image_url") val coverImageUrl: String,
     @ColumnInfo(name = "next_close_timestamp") val nextCloseTimestamp: Long?,
-    @ColumnInfo(name = "next_open_timestamp") val nextOpenTimestamp: Long?,
+    @ColumnInfo(name = "next_open_timestamp") val nextOpenTimestamp: Long?
 ) : BaseDatabaseEntity

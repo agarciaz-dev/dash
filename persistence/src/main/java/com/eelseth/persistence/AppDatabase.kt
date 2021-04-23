@@ -5,11 +5,14 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.eelseth.persistence.dao.RestaurantDao
+import com.eelseth.persistence.dao.RestaurantSaveDao
 import com.eelseth.persistence.model.DBRestaurant
+import com.eelseth.persistence.model.DBRestaurantSaved
 
 @Database(
     entities = [
-        DBRestaurant::class
+        DBRestaurant::class,
+        DBRestaurantSaved::class
     ],
     version = 1
 )
@@ -17,6 +20,7 @@ import com.eelseth.persistence.model.DBRestaurant
 internal abstract class AppDatabase : RoomDatabase() {
 
     abstract fun restaurantDao(): RestaurantDao
+    abstract fun restaurantSaveDao(): RestaurantSaveDao
 
     companion object {
 

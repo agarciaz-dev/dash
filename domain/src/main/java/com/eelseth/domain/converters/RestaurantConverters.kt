@@ -1,11 +1,11 @@
 package com.eelseth.domain.converters
 
-import android.util.Log
 import com.eelseth.core.utils.toDateTimestamp
 import com.eelseth.domain.base.SERVER_DATE_FORMAT
 import com.eelseth.domain.model.Restaurant
 import com.eelseth.network.model.NTRestaurant
 import com.eelseth.persistence.model.DBRestaurant
+import com.eelseth.persistence.model.DBRestaurantWithSaved
 
 internal fun NTRestaurant.toDBRestaurant() = DBRestaurant(
     id = id,
@@ -18,11 +18,12 @@ internal fun NTRestaurant.toDBRestaurant() = DBRestaurant(
     },
 )
 
-internal fun DBRestaurant.toRestaurant() = Restaurant(
-    id = id,
-    name = name,
-    description = description,
-    coverImageUrl = coverImageUrl,
-    nextCloseTimestamp = nextCloseTimestamp,
-    nextOpenTimestamp = nextOpenTimestamp
+internal fun DBRestaurantWithSaved.toRestaurant() = Restaurant(
+    id = restaurant.id,
+    name = restaurant.name,
+    description = restaurant.description,
+    coverImageUrl = restaurant.coverImageUrl,
+    nextCloseTimestamp = restaurant.nextCloseTimestamp,
+    nextOpenTimestamp = restaurant.nextOpenTimestamp,
+    saved = dbRestaurantSaved.saved
 )

@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "f681df174b783c016e4f5b16782752ef",
+    "identityHash": "455135942e5d37b48289933a079346c9",
     "entities": [
       {
         "tableName": "restaurant",
@@ -53,12 +53,38 @@
         },
         "indices": [],
         "foreignKeys": []
+      },
+      {
+        "tableName": "restaurant_saved",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`restaurant_id` TEXT NOT NULL, `saved` INTEGER NOT NULL, PRIMARY KEY(`restaurant_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "restaurant_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saved",
+            "columnName": "saved",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "restaurant_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
       }
     ],
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f681df174b783c016e4f5b16782752ef')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '455135942e5d37b48289933a079346c9')"
     ]
   }
 }

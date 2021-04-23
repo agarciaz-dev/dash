@@ -9,5 +9,6 @@ interface RestaurantRepository {
     fun restaurantsFlow(): Flow<List<Restaurant>>
 
     suspend fun fetchRestaurants(): Result<Unit>
+    suspend fun saveRestaurant(restaurantId: String): Result<Unit>
 
 }
